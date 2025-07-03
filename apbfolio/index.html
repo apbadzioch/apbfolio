@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>apbfolio</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="bot/bot.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+
+</head>
+
+
+<body>
+    <header>
+        <h1>Andrew Badzioch</h1>
+    </header>
+
+
+    <!-- Hero Section -->
+    <main>
+        <section class="hero">
+            <h1>Welcome to my Portfolio</h1>
+            <p>This is a continuous project that began while pursuing an Associate of Applied Science in Artificial Intelligence and Robotics degree at Houston Community College.
+            Although not intended to showcase web development skills, this portfolio documents my journey in learning and applying AI concepts, machine learning techniques, and developing a range of new skills through various projects and ideas.
+            </p>
+        </section>
+    </main>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <h2>Projects</h2>
+        <div class="project-cards">
+
+            <div class="project-card">
+                <h3>AI Agent Capstone</h3>
+                <p>A class group project in which we began working on a process automation agent unsing NLP and API integration to intelligently manage emails, tasks, and calendar scheduling. This project is the base for "Agent Andy".</p>
+                <a href="https://github.com/apbadzioch/DeepLearning_SP25">GitHub Repo</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Data Science with Python</h3>
+                <p>Completed several Python-based projects focusing on EDA, missing data handling, and visual storytelling using Pandas, Matplotlib, and Seaborn.</p>
+                <a href="https://github.com/apbadzioch/DataSci_FA24">GitHub Repo</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Pitch Prediction System</h3>
+                <p>A personal project that connects </p>
+                <a href="https://github.com/apbadzioch/MLB_stuff">GitHub Repo</a><br>
+            </div>
+
+            <div class="project-card">
+                <h3></h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-icons">
+            <a href="https://github.com/apbadzioch" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/andrew-badzioch" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+        <div class="footer-container">
+        <nav class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <div class="dropdown">
+                <a href="contact.html">Contact</a>
+                <div class="dropdown-content">
+                    <a href="mailto:abadzioch@gmail.com">Email</a>
+                    <a href="tel:+1(503) 956-7729">Phone</a>
+                </div>
+            </div>
+            <a href="assets/andyresume.pdf" target="_blank">Resume</a>
+        </nav>   
+        <p> 2025 Andy Badzioch. Built with HTML, CSS, and JavaScript (with some help from AI).</p>
+        
+        </div>
+    </footer>
+        
+    
+    
+    
+    <!-- Agent Button -->
+     <button onclick="toggleAgent()" class="agent-button"> Ask Agent Andy </button>
+
+    <!-- Pop-up Agent Box --> 
+     <div id="agent-box" class="agent-box">
+        <div class="agent-header">
+            <span>Agent Andy</span>
+            <button onclick="toggleAgent()">x</button>
+        </div>
+        <div class="agent-body">
+
+            <div class="chat-box">
+                <div class="chat-log" id="chat-log"></div>
+                <div id="typing-indicator" style="display: none; font-style: italic; color: #999;">Agent Andy is typing...</div>
+                <input type="text" id="chat-input" placeholder="Type a message..." onkeydown="handleKey(event)">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+     </div>
+
+     <script src="js/main.js"></script>
+     <script src="bot/bot.js"></script>
+
+
+
+</body>
+</html>
