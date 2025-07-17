@@ -9,7 +9,7 @@ function toggleAgent() {
     if (agentBox.classList.contains("active") && !hasWelcomed) {
         hasWelcomed = true;
         setTimeout(() => {
-            chatLog.innerHTML += `<div class="bot-message"><strong>Agent Andy:</strong> Hi there! I'm Agent Andy <br>Ask me about my projects, resume, or how to contact me.</div>`;
+            chatLog.innerHTML += `<div class="bot-message"><strong>Agent Andy:</strong> Hi there! I'm Agent Andy. <br>Ask me about my projects, resume, or how to contact me.</div>`;
             chatLog.scrollTop = chatLog.scrollHeight;
         }, 500); // 0.5 second delay)
     }
@@ -58,6 +58,8 @@ function getBotResponse(message) {
         return "My resume is available in the Resume section.";
     } else if (message.includes("contact")) {
         return "You can contact me via the Contact section.";
+    } else if (message.includes("certifications")) {
+        return "You can find links to my certifications in the Certifications section."
     }
 
     return "I'm still learning. Try asking about my projects, resume, or contact information.";
