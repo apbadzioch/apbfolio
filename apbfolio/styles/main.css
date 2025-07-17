@@ -76,6 +76,9 @@ i {
     color: #00ffd5;
     text-decoration: none;
 }
+.project-card li a {
+    color: goldenrod;
+}
 
 /* CONTACT Dropdown container */
 .dropdown {
