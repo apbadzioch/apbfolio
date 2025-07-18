@@ -49,6 +49,26 @@ i {
     }
 }
 
+/* Classes Section */
+.classes-section {
+    padding: 2rem;
+    background-color: #121212;
+    color: #f0f0f0;
+}
+.class-card {
+    display: single-column;
+}
+.class-card  li {
+    color: goldenrod;
+}
+
+
+
+
+
+
+
+
 /* Projects Section */
 .projects-section {
     padding: 2rem;
@@ -57,7 +77,7 @@ i {
 }
 .project-cards {
     display: grid;
-    grid-template-columns: repeat(suto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1.5rem;
 }
 .project-card {

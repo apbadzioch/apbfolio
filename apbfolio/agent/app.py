@@ -12,5 +12,5 @@ def chat():
     reply = get_response(user_input)
     return jsonify({"response": reply})
 
-if __name__ == "__main++":
+if __name__ == "__main__":
     app.run(debug=True)
