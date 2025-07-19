@@ -19,10 +19,18 @@ header {
 }
 
 footer {
-    color: #f0f0f0;
+    color: #f4f6f7;
     text-align: center;
     padding: 1rem;
     position: relative;
+}
+
+.social-icons a {
+    color: #bfc9ca;
+}
+
+.footer-nav a {
+    color: #f4f6f7;
 }
 
 i {
@@ -103,7 +111,7 @@ i {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #222;
+    background-color: #f4f6f7;
     min-width: 120px;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
     z-index: 1;
