@@ -62,13 +62,6 @@ i {
     color: goldenrod;
 }
 
-
-
-
-
-
-
-
 /* Projects Section */
 .projects-section {
     padding: 2rem;
@@ -77,7 +70,7 @@ i {
 }
 .project-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-areas: none;
     gap: 1.5rem;
 }
 .project-card {
