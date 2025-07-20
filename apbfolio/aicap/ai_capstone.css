@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700&display=swap");
+
+html, body {
+    height: 100%;
+    margin: flex;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Orbitron', sans-serif;
+    background: #0f0f0f;
+    color: #f0f0f0;
+}
+
+main {
+    flex: 1;
+}
+
+header {
+    text-align: center;
+}
+
+footer {
+    color: #f4f6f7;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+}
+
+.hero p b {
+    color: #c0c5ce;
+}

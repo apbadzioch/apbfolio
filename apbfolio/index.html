@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>apbfolio</title>
-    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="bot/bot.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     
@@ -39,7 +39,8 @@
             
             <div class="class-card">
             <ul>
-                <li>Artificial Intelligence History, Theory, and Platforms</li>
+                <li><a href="https://github.com/apbadzioch/Python_Programming_SP24">Artificial Intelligence History, Theory, and Platforms</a></li>
+                    <p>Gained a foundation in the Python programming language, including data types, structures, functions, and arrays. </p>
                 <li>Programming Fundamentals (Python)</li>
                 <li>Introduction to Machine Learning</li>
                 <li>Artificial Intelligence in Cyber Security</li>
@@ -63,9 +64,11 @@
         <h2>Projects</h2>
         <div class="project-cards">
 
-            <div class="project-card">
+           <!-- <div class="project-card">
                 <h3>Programming Fundamentals (<strong>Python</strong>)</h3>
-            </div>
+                <p></p>
+                <a href="https://github.com/apbadzioch/Python_Programming_SP24">GitHub Repo</a>
+            </div> -->
 
             <div class="project-card">
                 <h3>Data Analysis with Python</h3>
@@ -81,7 +84,10 @@
 
             <div class="project-card">
                 <a href="aicap/ai_capstone.html"><h3>AI Resources and Final Capstone</h3></a>
-                <p></p>
+                <p>A proof of concept group project to validate that a lightweight, edge-deployable AI system running on Raspberry Pi can detect fire in real time 
+                    and transmit location-tagged alerts via telemetery, demonstrating the feasibility of using the system
+                    in aerial or remote wildfire surveilence.
+                </p>
                 <a href="https://github.com/apbadzioch/Capstone01">GitHub Repo</a>
             </div>
 
@@ -135,19 +141,19 @@
     
     <!-- AGENT SECTION-->
     <!-- Agent Button -->
-     <button onclick="toggleAgent()" class="agent-button"> Ask Agent Andy </button>
+     <button onclick="toggleAgent()" class="agent-button"> Ask BadzBot </button>
 
     <!-- Pop-up Agent Box --> 
      <div id="agent-box" class="agent-box">
         <div class="agent-header">
-            <span>Agent Andy</span>
+            <span>BadzBot</span>
             <button onclick="toggleAgent()">x</button>
         </div>
         <div class="agent-body">
 
             <div class="chat-box">
                 <div class="chat-log" id="chat-log"></div>
-                <div id="typing-indicator" style="display: none; font-style: italic; color: #999;">Agent Andy is typing...</div>
+                <div id="typing-indicator" style="display: none; font-style: italic; color: #999;">BadzBot is working on it...</div>
                 <input type="text" id="chat-input" placeholder="Type a message..." onkeydown="handleKey(event)">
                 <button onclick="sendMessage()">Send</button>
             </div>

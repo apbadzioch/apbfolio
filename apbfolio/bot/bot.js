@@ -9,7 +9,7 @@ function toggleAgent() {
     if (agentBox.classList.contains("active") && !hasWelcomed) {
         hasWelcomed = true;
         setTimeout(() => {
-            chatLog.innerHTML += `<div class="bot-message"><strong>Agent Andy:</strong> Hi there! I'm Agent Andy. <br>Ask me about my projects, resume, or how to contact me.</div>`;
+            chatLog.innerHTML += `<div class="bot-message"><strong>BadzBot:</strong> Hi there! I'm here to help with questions about my projects, resume, or how to contact me.</div>`;
             chatLog.scrollTop = chatLog.scrollHeight;
         }, 500); // 0.5 second delay)
     }
@@ -41,7 +41,7 @@ function sendMessage() {
         const botResponse = getBotResponse(userMsg);
 
         typingIndicator.style.display = "none";
-        chatLog.innerHTML += `<div class="bot-message"><strong>Agent Andy:</strong> ${botResponse}</div>`;
+        chatLog.innerHTML += `<div class="bot-message"><strong>BadzBot:</strong> ${botResponse}</div>`;
         chatLog.scrollTop = chatLog.scrollHeight;
     }, 1000); // 1 second delay
 }
