@@ -57,18 +57,31 @@ i {
     }
 }
 
+
 /* Classes Section */
 .classes-section {
     padding: 2rem;
     background-color: #121212;
     color: #f0f0f0;
 }
+.class-cards {
+    display: grid;
+    grid-template-areas: none;
+    gap: 1.5rem;
+}
 .class-card {
-    display: single-column;
+    background-color: #1e1e1e;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0, 4px 12px rgba(0, 0, 0, 0.5);
 }
 .class-card  li {
     color: goldenrod;
 }
+.class-card li strong {
+    color: #FFC300;
+}
+
 
 /* Projects Section */
 .projects-section {
@@ -100,6 +113,7 @@ i {
 .project-card li a {
     color: goldenrod;
 }
+
 
 /* CONTACT Dropdown container */
 .dropdown {

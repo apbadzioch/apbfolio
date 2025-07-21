@@ -28,3 +28,14 @@ footer {
 .hero p b {
     color: #c0c5ce;
 }
+.social-icons a {
+    color: #bfc9ca;
+}
+
+.footer-nav a {
+    color: #f4f6f7;
+}
+
+i {
+    margin-right: 6px;
+}
