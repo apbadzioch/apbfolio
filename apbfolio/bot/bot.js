@@ -9,7 +9,7 @@ function toggleAgent() {
     if (agentBox.classList.contains("active") && !hasWelcomed) {
         hasWelcomed = true;
         setTimeout(() => {
-            chatLog.innerHTML += `<div class="bot-message"><strong>BadzBot:</strong> Hi there! I'm here to help with questions about my projects, resume, or how to contact me.</div>`;
+            chatLog.innerHTML += `<div class="bot-message"><strong>BadzBot:</strong> Hi there! How may I assist you today?</div>`;
             chatLog.scrollTop = chatLog.scrollHeight;
         }, 500); // 0.5 second delay)
     }
