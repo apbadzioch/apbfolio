@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700&display=swap");
 
+
 html, body {
     height: 100%;
     margin: flex;
@@ -26,20 +27,23 @@ main {
     }
 }
 
+/* HEADER */
 header {
     text-align: center;
+}
+header h1 {
+    font-size: 30px;
 }
 header p {
     color: #F4911E;
 }
 header p strong {
     animation: blink 2s linear infinite;
-    font-size: 20px;
+    font-size: 22px;
     color: #EB6E1F;
 }
 
-
-
+/* FOOTER */
 footer {
     color: #F4911E;
     text-align: center;

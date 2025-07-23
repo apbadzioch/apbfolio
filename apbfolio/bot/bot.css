@@ -29,7 +29,7 @@
   right: 20px;
   width: 280px;
   background: #111;
-  border: 2px solid #00ffff;
+  border: 2px solid #34544F;
   border-radius: 10px;
   box-shadow: 0 0 20px #00ffff55;
   z-index: 1000;
@@ -42,7 +42,7 @@
 }
 
 .agent-header {
-  background-color: #007acc;
+  background-color: #6d8a4d;
   color: #fff;
   padding: 10px;
   border-top-left-radius: 8px;
@@ -72,7 +72,7 @@
 }
 
 .agent-body button {
-  background-color: #007acc;
+  background-color: #6d8a4d;
   color: white;
   border: none;
   padding: 8px 12px;
@@ -83,7 +83,7 @@
 }
 
 .agent-body button:hover {
-  background-color: #005eaa;
+  background-color: 	#879d89;
 }
 
 /* Message Styling */

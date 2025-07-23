@@ -109,8 +109,9 @@ function getBotResponse(message) {
             "I have certifications from AWS Academy and Linux Essentials."
         ],
         description: ["I am a rule based chatbot.",
-            "I am programmed to help with questions about "
-        ]
+            "I am here to help navigate the website.",
+            "I can only answer a few basic questions."
+        ],
     };
 
     for (const intent in keywords) {
