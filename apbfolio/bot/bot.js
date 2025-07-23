@@ -76,12 +76,15 @@ function chooseRandom(arr) {
 function getBotResponse(message) {
     const lowerMsg = message.toLowerCase();
 
+
+// object with keys (greeting, project, ...) and values (array of strings) similar to dictionary in Python
     const keywords = {
         greeting: ["hello", "hi", "hey", "greetings", "how are you"],
         project: ["projects", "project", "work", "portfolio", "github", "class projects", "school projects"],
         resume: ["resume", "cv", "experience", "education", "skill", "skills", "qualifications"],
         contact: ["contact", "email", "reach me", "phone", "linkedin", "github"],
-        certifications: ["certifications", "certification", "certs", "cert", "aws", "linux"]
+        certifications: ["certifications", "certification", "certs", "cert", "aws", "linux"],
+        description: ["you", "yourself", "bot", "badz", "badzbot"],
 };
 
     const responses = {
@@ -89,21 +92,24 @@ function getBotResponse(message) {
             "Hello! What can I do for you today?",
             "Hello! How may I help you?"
         ],
-        project: ["You can learn more about my projects under the Projects tab.",
-            "There is a link to my projects in the each project section.",
-            "There is a link to my projects at the bottom of the page that connects to my GitHub."
+        project: ["Some projects are still in production, but can be found through GitHub.",
+            "Please click on a project for more information.",
+            "Some projects are still in production, but more information can be found through "
         ],
-        resume: ["My resume is available in the Resume section.",
-            "You can find my resume in the Resume section.",
-            "My work history is available in the Resume section."
+        resume: ["For an updated resume, please contact via email.",
+            "Please contct via email for an updated resume.",
+            "Please email for an updated resume, thank you."
         ],
-        contact: ["You can find my contact information in the Contact section.",
-            "You can contact me via email or phone, both of which are available in the Contact section.",
-            "The Contact section has my information, or you can reach me on Linkedin with the link provided below."
+        contact: ["My email link is available below.",
+            "You can contact me via the email link below.",
+            "My email and LinkedIn are both available below."
         ],
         certifications: ["I currently have two certifications.",
             "My certifications are available in the Certifications section.",
             "I have certifications from AWS Academy and Linux Essentials."
+        ],
+        description: ["I am a rule based chatbot.",
+            "I am programmed to help with questions about "
         ]
     };
 

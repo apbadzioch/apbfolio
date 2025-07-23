@@ -6,8 +6,8 @@ html, body {
     display: flex;
     flex-direction: column;
     font-family: 'Orbitron', sans-serif;
-    background: #0f0f0f;
-    color: #f0f0f0;
+    background: #2E2E2E;
+    color: #F5F5F5;
 }
 
 main {
@@ -17,23 +17,30 @@ main {
 header {
     text-align: center;
 }
+header h1 {
+    color: #E10600;
+}
+header h2 {
+    color: #FF5E00
+}
+
+.hero h3 {
+    color: #F2C744;
+}
 
 footer {
-    color: #f4f6f7;
+    color: #F5F5F5;
     text-align: center;
     padding: 1rem;
     position: relative;
 }
 
-.hero p b {
-    color: #c0c5ce;
-}
 .social-icons a {
-    color: #bfc9ca;
+    color: #F5F5F5;
 }
 
 .footer-nav a {
-    color: #f4f6f7;
+    color: #F5F5F5;
 }
 
 i {

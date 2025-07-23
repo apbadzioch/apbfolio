@@ -18,6 +18,14 @@ header {
     text-align: center;
 }
 
+h1 {
+    font-size: 35px;
+    font-weight: 200;
+}
+h2 {
+    font-size: 25px;
+    font-weight: 200;
+}
 footer {
     color: #f4f6f7;
     text-align: center;

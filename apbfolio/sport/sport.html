@@ -3,16 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⚾️ Baseball</title>
     <link rel="stylesheet" href="sport.css">
-    <title>Baseball</title>
-</head>
-<body>
-    <h1>Welcome to my Baseball Insight page.</h1>
-    <input type="text" id="pitcher-name" placeholder="Enter Pitcher Name">
-    <button onclick="fetchPitcherData()">Analyze</button>
-    <div id="output"></div>
-    <img id="pitch-plot" style="display:none;" />
+    
 
+
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Baseball Insights</h1>
+        <p>This section is currently <strong>under consrtuction</strong></p>
+    </header>
+    
+    <main>
+        <section class="hero">
+           <p>This Python project focuses on the analysis of pither and batter trends using historical MLB datasets.
+            It leverages pandas and numpy for data manipulation, while matplotlib and seaborn generate visual insights into 
+            pitch selection frequency, dominant pitch types, and annual patterns. The system currently supports CLI interaction 
+            and player-specific breakdowns.
+           </p>
+           <p>To make this tool accessible on the web, I am working on developing a custom API using Django. This API will serve
+            as a backend that processes user input, like pitcher or batter names, and return statistical insights such as dominant
+            pitch type, pitch useage trends, and pitch count histories.
+           </p>
+           <p>This approach allows for a clean separation between the frontend and backend, improving performance, scalability,
+            and future expansion, such as adding machine learning predictions or real-time analytics.
+           </p>
+        </section>
+    </main>
+
+ <!-- FOOTER -->
+    <footer>
+        <div class="social-icons">
+            <a href="https://github.com/apbadzioch" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/andrew-badzioch" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+        <div class="footer-container">
+        <nav class="footer-nav">
+            <a href="index.html">Home</a>
+            <!-- <a href="about.html">About</a> -->
+            <!-- <a href="projects.html">Projects</a> -->
+            <a href="mailto:abadzioch@gmail.com">Email</a>
+            <!-- <a href="assets/andyresume.pdf" target="_blank">Resume</a> -->
+        </nav>   
+        <p>Andy Badzioch. Built with HTML, CSS, and JavaScript. 2025</p>
+        
+        </div>
+    </footer>
     <script src="pitch.js"></script>
 </body>
 </html>

@@ -3,21 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ai capstone</title>
+    <title>🔥 ai capstone</title>
     <link rel="stylesheet" href="ai_capstone.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <header>
         <h1>AI Capstone - Proof of Concept</h1>
+        <h2>Fire and Smoke Detection using Raspberry Pi</h2>
     </header>
 
     <section class="hero">
         <h3>Concept Overview</h3>
-        <p>This project focuses on building a real-time fire and smoke detection system using a Raspberry Pi
-            and the YOLO <b>(You Only Look Once)</b> object detection model. The system is intended for deployment on aerial drones
-            or remote stations. 
+        <p>This project showcasaes a full proof-of-concept for an intelligent, drone compatable fire and smoke detection system powered
+            by a Raspberry Pi and a custom trained YOLO (You Only Look Once) model. The system captures live video feed and uses the YOLO object 
+            detection algorythm to identify visible signs of fire and smoke in real time, eliminating the need for constant cloud connectivity.
         </p>
+        <p>Built entirely in Python, the pipeline combines computer vision, geolocation, and telemetry. After calculating the fire's angle and distance
+            based on the bounding box and camera field of view, the system uses trigonometry and geospacial conversion formulas to compute the fire's actual
+            coordinates. These coordinate, along with confidence scores and timestamps, are then sent through multiple alerting channels.
+        </p>
+        <p>The system supports webhook-based API notifications, SMS alerts using Twilio, and detailed email messages with GPS tagged information. It also logs
+            every detection locally and uploads the records to a remote server using SSH/SFTP. A network check ensures network reliability by switching between Wi-Fi
+            and cellular connections when necessary.
+        </p>
+        <p>This proof of concept demonstrates the viability of edge-based wildfire detection using AI, GPS, and real-time communications, all running on a 
+            Raspberry Pi. Future development will include hardware-integrated LiDAR support, drone based field testing, and visualization dashboards for 
+            environmental monitoring and rapid emergency response.
+        </p>       
     </section>
 
 
